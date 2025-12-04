@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Abraham Joys - CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --accent: #222222;
+            --text: #222222;
+            --muted: #555555;
+            --border: #dddddd;
+            --bg: #ffffff;
+            --heading-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            --body-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f3f3f3;
+            font-family: var(--body-font);
+            color: var(--text);
+            line-height: 1.4;
+            font-size: 14px;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 16px auto;
+            background: var(--bg);
+            padding: 32px 40px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* Header */
+        .header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        .name {
+            font-family: var(--heading-font);
+            font-size: 28px;
+            letter-spacing: 0.02em;
+            font-weight: 700;
+            margin: 0 0 4px 0;
+        }
+
+        .contact {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .contact a {
+            color: var(--muted);
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 14px;
+        }
+
+        .section-title {
+            font-family: var(--heading-font);
+            font-size: 14px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+        }
+
+        .section p {
+            margin: 0 0 6px 0;
+            text-align: justify;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        /* Lists */
+        ul {
+            margin: 0 0 6px 16px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 2px;
+        }
+
+        /* Employment / Education layout */
+        .item {
+            margin-bottom: 8px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-weight: 600;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .item-dates {
+            font-size: 13px;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .item-location {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .item-details {
+            margin-top: 3px;
+        }
+
+        /* Helper for small sub-bullets */
+        .sub-list {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        .sub-list li {
+            list-style-type: circle;
+        }
+
+        /* Two-column feel for EDUCATION modules on wider screens */
+        .modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2px 24px;
+            margin-top: 4px;
+        }
+
+        .modules li {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="name">Abraham Joys</h1>
+            <div class="contact">
+                Phone number: <a href="tel:+447551199833">07551199833</a>,
+                Email address: <a href="mailto:abrahamjoys98@gmail.com">abrahamjoys98@gmail.com</a>
+            </div>
+        </header>
+
+        <!-- PERSONAL PROFILE -->
+        <section class="section">
+            <h2 class="section-title">Personal Profile</h2>
+            <p class="quote">
+                ‘Someone who you can rely on to find out the answers on his own accord,
+                willingness to involve himself, contributing to a wide manner of subjects
+                and providing suggestions’
+            </p>
+            <p>
+                Possessing 6 years of full-stack experience. I have been described by my coworkers as a hardworking
+                individual. This stems from the fact that I was running a few app projects, whilst also learning and
+                researching new frameworks to move current projects into. With Mathematics and Computer Science being
+                my main interests, I have learnt how to think critically and analytically, to solve problems in a
+                creative manner and how to get complex tasks done efficiently. I am willing to take any training
+                necessary to learn new skills and better myself.
+            </p>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li>
+                    <strong>Strong Object-Oriented programming skills:</strong>
+                    Java, Python, React, Angular, Java Script, NodeJS/Typescript, Lightning
+                </li>
+                <li>
+                    <strong>Proficient in Full stack development:</strong>
+                    MySQL, GraphQL, Spring Boot, Unix/Linux, AWS (Ec2 Instances, Serverless, Dynamo), HTML, CSS
+                </li>
+                <li>Git Data Structures (Git/GitHub/GitLab)</li>
+                <li>Worked in Agile, TDD fashion, with a certification awarded with PSM1 (Professional Scrum Master)
+                </li>
+            </ul>
+        </section>
+
+        <!-- EMPLOYMENT -->
+        <section class="section">
+            <h2 class="section-title">Employment</h2>
+
+            <!-- Job 1 -->
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">SKY, Senior Software Engineer</div>
+                        <div class="item-location">Osterley</div>
+                    </div>
+                    <div class="item-dates">September 2024 – Present</div>
+                </div>
+                <div class="item-details">
+                    <ul>
+                        <li>
+                            Working on SkyQ &amp; SKY GLASS TV Apps Development:
+                            <ul class="sub-list">
+                                <li>Sky Sports App</li>
+                                <li>Sky Sports/Air on Fluter</li>
+                                <li>Casual Gaming: Santa Tracker, Beehive Bedlem</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Lead the project on “Match Alerts Notification” features allowing users to subscribe to
+                            other
+                            sports while watching a particular game. It gives live fast notification updates on the TV
+                            if an
+                            event happens in the game, selecting the notification would show them the clip of what they
+                            have
+                            missed. Full stack development on this project:
+                            <ul class="sub-list">
+                                <li>FrontEnd: Lightning (JavaScript)</li>
+                                <li>Backend: AWS Serverless Backend, Node.js, Java</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">SKY, Software Engineer</div>
+                        <div class="item-location">Osterley</div>
+                    </div>
+                    <div class="item-dates">September 2020 – 2024</div>
+                </div>
+                <div class="item-details">
+                    <ul>
+                        <li>
+                            Working on the Highlights experience for Sky Sports users, when watching a sports game, red
+                            button
+                            triggers navigate users to a Sports App, used by millions, showing highlights of a match
+                            catching
+                            them up to the game.
+                            <ul class="sub-list">
+                                <li>TypeScript frameworks Lightning.js and Flutter (Google Dart)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Creating a sports data feature in the Sky Sports TV app for users who want to look at stats,
+                            scores
+                            and fixtures for multiple sports and the upcoming Olympics games, which updates based on the
+                            current
+                            results.
+                        </li>
+                        <li>
+                            Hosting and building pipelines for Sky Apps on AWS platforms which will be connected to the
+                            SkyQ
+                            boxes.
+                        </li>
+                        <li>
+                            Experience using Adobe analytics, and Graphana telemetry, Conviva to track usage and
+                            diagnostics data.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Contemi Solutions AS, Placement Developer</div>
+                        <div class="item-location">Leicester</div>
+                    </div>
+                    <div class="item-dates">August 2018 – August 2019</div>
+                </div>
+                <div class="item-details">
+                    <ul>
+                        <li>
+                            Worked as a full stack developer on various Angular Wealth management applications with
+                            experience
+                            using:
+                            <ul class="sub-list">
+                                <li><strong>Back End:</strong> Java, Database Handling SQL, Docker, Python</li>
+                                <li><strong>Front End:</strong> HTML/CSS/JS/TS, Angular, Node.js, React</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">University of Leicester</div>
+                        <div class="item-subtitle">
+                            BSc Computer Science with Year in Industry (1st) – 87% overall
+                        </div>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <p><strong>Relevant Modules:</strong></p>
+                    <ul class="modules">
+                        <li>1st – Operating Systems</li>
+                        <li>1st – Networks and Distributed Systems</li>
+                        <li>1st – Android App Development</li>
+                        <li>1st – Software Engineering and System Development</li>
+                        <li>1st – Automata, Languages and Computation</li>
+                        <li>1st – Functional Programming</li>
+                        <li>1st – Software Engineering Project</li>
+                        <li>1st – Multimedia and Computer Graphics</li>
+                        <li>1st – C++ and Algorithms</li>
+                        <li>1st – Web Tech</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Herschel Grammar School, Slough</div>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <p>A level: Mathematics, Further Mathematics, Computing</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">St Joseph’s Catholic High School, Slough</div>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <p>
+                        GCSE’s Grade Ranging A*–C including Maths (A*) and English (B) (or equivalent qualifications)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POSITIONS OF RESPONSIBILITY -->
+        <section class="section">
+            <h2 class="section-title">Positions of Responsibility</h2>
+            <ul>
+                <li>
+                    Lead team project on Match Alerts Notification for Sports Apps, where there was a large amount of
+                    gathering requirements, pushing back, delivering, release management, team delegation, and
+                    architecture
+                    planning, along with hands-on work.
+                </li>
+                <li>
+                    Video Analytics Integration for Sky Apps, responsible for creating a video dashboarding system for
+                    video
+                    analytics for the Sky ecosystem.
+                </li>
+                <li>
+                    Created a Video Player Platform for JavaScript which handles different types of streams – HLS, Dash,
+                    DRM streams – for the Sky ecosystem.
+                </li>
+            </ul>
+
+            <div class="item">
+                <div class="item-title">University of Leicester Course Representative</div>
+                <div class="item-details">
+                    <ul>
+                        <li>
+                            Responsible for collecting and portraying feedback to university lecturers, to help improve
+                            the
+                            education process.
+                        </li>
+                        <li>
+                            Bridging the gap between the lecturers and the students, essentially representing the
+                            students.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY SKILLS -->
+        <section class="section">
+            <h2 class="section-title">Key Skills</h2>
+
+            <div class="item">
+                <div class="item-title">Ability to Lead Projects and Work Under Pressure</div>
+                <div class="item-details">
+                    <ul>
+                        <li>
+                            Provided a brand-new feature in the middle of a sprint which was requested by the product
+                            owner and
+                            delivered the main work of the sprint alongside the side projects.
+                        </li>
+                        <li>
+                            Was responsible for the entire backend solution for a notification feature for SKY’s POCs
+                            which got
+                            turned into a production app used by a large number of customers.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-title">Incident Management &amp; On-Call</div>
+                <div class="item-details">
+                    <ul>
+                        <li>
+                            Experienced in on-call rotations for Sky Sports, handling live production incidents,
+                            root-cause
+                            analysis, and implementing fast recovery strategies (fix, rollback, or mitigation).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-title">Fast Learner</div>
+                <div class="item-details">
+                    <ul>
+                        <li>
+                            Joined my team with Sky during the middle of a release and had to quickly pick up and get
+                            familiar
+                            with the codebase and frameworks, and started straight into doing tickets.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUALIFICATIONS & AWARDS -->
+        <section class="section">
+            <h2 class="section-title">Qualifications &amp; Awards</h2>
+            <ul>
+                <li>PSM1 (Professional Scrum Master 1)</li>
+                <li>BDD (Behaviour Driven Development) and TDD (Test Driven Development)</li>
+            </ul>
+        </section>
+
+        <!-- INTERESTS -->
+        <section class="section">
+            <h2 class="section-title">Interests</h2>
+            <ul>
+                <li>Learning new programming languages and programming independent side projects for fun.</li>
+                <li>
+                    Home Automation software, building Python libraries in an open source framework (HomeAssistant), to
+                    make
+                    house smart switches and bulbs work with a server from a Raspberry Pi.
+                </li>
+                <li>Martial Arts. Obtained a black belt in Taekwondo.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
